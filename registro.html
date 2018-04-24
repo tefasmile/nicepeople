@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+        crossorigin="anonymous">
+    <title>El periodico | Nice People</title>
+</head>
+<body>
+    <div class="header">
+        <div class="figure">
+            <a href="index.html">
+                <img src="img/idealogo.png" width="245" class="image" alt="">
+            </a>
+        </div>
+        <div class="net">
+            <div class="social">
+                <a href="#">
+                    <i class="fta fab fa-facebook-f icon"></i>
+                </a>
+                <a href="#">
+                    <i class="ft fab fa-twitter icon"></i>
+                </a>
+                <a href="#">
+                    <i class="ft fab fa-youtube icon"></i>
+                </a>
+                <a href="#">
+                    <i class="ft fab fa-instagram icon"></i>
+                </a>
+            </div>
+            <div class="suscribe">
+                <button class="btn-suscrb">
+                    <a href="registro.html">Suscribete</a>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="contenido">
+        <nav class="menu">
+            <ul class="navigation">
+                <li class="item">
+                    <a class="black" href="index.html">
+                        <i class="fas fa-home">Inicio</i>
+                    </a>
+                </li>
+                <li class="item">
+                    <a class="black" href="periodismo.html">
+                        <i class="fas fa-pencil-alt">Periodismo</i>
+                    </a>
+                </li>
+                <li class="item">
+                    <a class="black" href="cultura.html">
+                        <i class="fab fa-connectdevelop">Cultura</i>
+                    </a>
+                </li>
+                <li class="item">
+                    <a class="black" href="radio.html">
+                        <i class="fas fa-microphone">En radio</i>
+                    </a>
+                </li>
+                <li class="item">
+                    <a class="black" href="tv.html">
+                        <i class="fab fa-youtube">TV</i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <h2 class="segundo">
+            Tu suscripción
+            <i class="far fa-smile"></i>
+        </h2>
+    </div>
+    <div class="contain">
+        <div class="container">
+            <form action="index.html" method="post">
+            
+                <h1>Registrate!</h1>
+            
+                <fieldset>
+                    <legend>
+                        <span class="number">1</span>Información basica</legend>
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="user_name">
+
+                    <label for="name">Apellidos:</label>
+                    <input type="text" id="name" name="user_name">
+            
+                    <label for="mail">Email:</label>
+                    <input type="email" id="mail" name="user_email">
+            
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="user_password">
+            
+                    <label>Edad:</label>
+                    <input type="radio" id="under_13" value="under_13" name="user_age">
+                    <label for="under_13" class="light">Debajo de 18</label>
+                    <br>
+                    <input type="radio" id="over_13" value="over_13" name="user_age">
+                    <label for="over_13" class="light">18 y mas</label>
+                </fieldset>
+            
+                <fieldset>
+                    <legend>
+                        <span class="number">2</span>Tú perfil</legend>
+                    <label for="bio">Biografia:</label>
+                    <textarea id="bio" name="user_bio"></textarea>
+                </fieldset>
+                <fieldset>
+                    <label for="job">Profesión:</label>
+                    <select id="job" name="user_job">
+                        <optgroup label="Web">
+                            <option value="frontend_developer">Front-End Developer</option>
+                            <option value="php_developor">PHP Developer</option>
+                            <option value="python_developer">Python Developer</option>
+                            <option value="rails_developer"> Rails Developer</option>
+                            <option value="web_designer">Web Designer</option>
+                            <option value="WordPress_developer">WordPress Developer</option>
+                        </optgroup>
+                        <optgroup label="Mobile">
+                            <option value="Android_developer">Androild Developer</option>
+                            <option value="iOS_developer">iOS Developer</option>
+                            <option value="mobile_designer">Mobile Designer</option>
+                        </optgroup>
+                        <optgroup label="Negocios">
+                            <option value="business_owner">Dueño de negocio</option>
+                            <option value="freelancer">Freelancer</option>
+                        </optgroup>
+                        <optgroup label="Otro">
+                            <option value="secretary">Estudiante escolar</option>
+                            <option value="secretary">Universitario</option>
+                            <option value="maintenance">Secretaria</option>
+                            <option value="maintenance">Chef</option>
+                            <option value="secretary">Otro oficio</option>
+                        </optgroup>
+                    </select>
+            
+                    <label>Intereses:</label>
+                    <input type="checkbox" id="development" value="interest_development" name="user_interest">
+                    <label class="light" for="development">Desarrollo</label>
+                    <br>
+                    <input type="checkbox" id="design" value="interest_design" name="user_interest">
+                    <label class="light" for="design">Diseño</label>
+                    <br>
+                    <input type="checkbox" id="business" value="interest_business" name="user_interest">
+                    <label class="light" for="business">Negocios</label>
+                    <br>
+                    <input type="checkbox" id="business" value="interest_business" name="user_interest">
+                    <label class="light" for="business">Cultura Geek</label>
+            
+                </fieldset>
+                <button type="submit">Enviar</button>
+            
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        <ul class="footnav">
+            <li class="item white">
+                <a class="white" href="http://">Suscribete</a>
+            </li>
+            <li class="item white">
+                <a class="white" href="http://">© 2013-2018</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
